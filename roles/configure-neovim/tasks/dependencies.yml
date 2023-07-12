@@ -2,12 +2,13 @@
 - name: Install neovim dependencies
   become: true
   package:
-    name:
-      - git
-      - ripgrep
-      - fzf
-      - fd
+    name: "{{ item }}"
     state: present
+  loop:
+    - fzf
+    - git
+    - ripgrep
+    - fd
   ignore_errors: true
 
 - name: Install neovim dependencies (fd-find)

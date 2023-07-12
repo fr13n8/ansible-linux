@@ -1,5 +1,5 @@
 ---
-- name: install rofi
+- name: Install rofi
   become: true
   package:
     name: rofi

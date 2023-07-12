@@ -2,38 +2,38 @@
 - set_fact:
     font_directory: ~/.local/share/fonts
 
-- name: install fontconfig
+- name: Install fontconfig
   become: true
   package:
     state: present
     name: fontconfig
 
-- name: creates /tmp/CascadiaCode-fonts
+- name: Creates /tmp/CascadiaCode-fonts
   file:
     path: /tmp/CascadiaCode-fonts
     state: directory
 
-- name: set /tmp/CascadiaCode-fonts directory ownership
+- name: Set /tmp/CascadiaCode-fonts directory ownership
   file:
     dest: /tmp/CascadiaCode-fonts
     state: directory
     owner: "{{ ansible_user_id }}"
 
-- name: download CascadiaCode
+- name: Download CascadiaCode
   ansible.builtin.unarchive:
     src: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/CascadiaCode.zip
     dest: /tmp/CascadiaCode-fonts
     mode: 
     remote_src: yes
 
-- name: copy fonts
+- name: Copy fonts
   command: cp -r /tmp/CascadiaCode-fonts/ {{ font_directory }}
 
-- name: set fonts directory ownership
+- name: Set fonts directory ownership
   file:
     dest: "{{ font_directory }}"
     state: directory
     owner: "{{ ansible_user_id }}"
 
-- name: reset font cache
+- name: Reset font cache
   command: fc-cache -f {{ font_directory }}

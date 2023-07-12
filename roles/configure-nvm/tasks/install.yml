@@ -5,5 +5,19 @@
   args:
     creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
 
-- name: Install lts node
-  command: "nvm install --lts"
+- name: Setup .profile
+  lineinfile:
+    path: ~/.profile
+    line: source ~/.nvm/nvm.sh
+    create: yes
+
+- name: Install node
+  become: false
+  shell: >
+    . {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install {{ item }}
+  args:
+    executable: /bin/zsh
+    chdir: "{{ ansible_env.HOME }}"
+    creates: "{{ ansible_env.HOME }}/.nvm/versions/{{ item }}"
+  loop:
+    - 18.16.1

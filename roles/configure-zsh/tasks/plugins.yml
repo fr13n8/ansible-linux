@@ -1,0 +1,9 @@
+---
+- name: Install zsh plugins
+  become: true
+  package:
+    name:
+      - zsh-autosuggestions
+      - zsh-syntax-highlighting
+    state: present
+  ignore_errors: true

@@ -6,8 +6,6 @@
       - git
       - ripgrep
       - fzf
-      - zsh-autosuggestions
-      - zsh-syntax-highlighting
       - fd
     state: present
   ignore_errors: true

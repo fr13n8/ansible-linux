@@ -1,6 +1,6 @@
 ---
 - name: Install alacritty
   become: true
-  ansible.builtin.package:
+  package:
     name: alacritty
     state: present

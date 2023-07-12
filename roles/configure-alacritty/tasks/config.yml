@@ -15,5 +15,6 @@
 
 - name: copy alacritty configs
   copy:
-    src: "{{ role_path }}/files/*"
+    src: "{{ role_path }}/files/alacritty"
     dest: "{{ alacritty_directory }}"
+    owner: "{{ ansible_user_id }}"

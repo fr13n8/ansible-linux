@@ -1,6 +1,6 @@
 ---
 - name: install rofi
   become: true
-  ansible.builtin.package:
+  package:
     name: rofi
     state: present

@@ -10,7 +10,7 @@
 
 - name: Creates /tmp/CascadiaCode-fonts
   file:
-    path: /src/www
+    path: /tmp/CascadiaCode-fonts
     state: directory
 
 - name: set /tmp/CascadiaCode-fonts directory ownership

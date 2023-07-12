@@ -1,7 +1,0 @@
----
-- name: "Install tmux [pacman]"
-  pacman:
-    name: tmux
-    state: present
-  become: true
-  become_method: sudo

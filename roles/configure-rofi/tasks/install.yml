@@ -1,6 +1,6 @@
 ---
-- name: Install tmux
+- name: Install rofi
   become: true
   ansible.builtin.package:
-    name: tmux
+    name: rofi
     state: present

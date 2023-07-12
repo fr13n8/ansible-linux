@@ -1,7 +1,0 @@
----
-- name: "Install neovim [pacman]"
-  pacman:
-    name: neovim
-    state: present
-  become: true
-  become_method: sudo

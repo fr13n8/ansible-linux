@@ -1,6 +1,6 @@
 ---
-- name: Install tmux
+- name: Install alacritty
   become: true
   ansible.builtin.package:
-    name: tmux
+    name: alacritty
     state: present

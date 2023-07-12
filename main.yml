@@ -5,6 +5,9 @@
   roles:
     - role: "roles/configure-tmux"
     - role: "roles/configure-neovim"
+    - role: "roles/configure-alacritty"
+    - role: "roles/configure-rofi"
+    - role: "roles/configure-fonts"
     - role: gantsign.visual-studio-code
       users:
         - username: "{{ ansible_user_id }}"

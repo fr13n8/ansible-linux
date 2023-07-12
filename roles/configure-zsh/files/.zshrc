@@ -115,4 +115,6 @@ export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --height=80%"
 export THEME_DIR=/usr/share/themes/Catppuccin-Mocha-Standard-Blue-dark
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source /usr/share/nvm/init-nvm.sh
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

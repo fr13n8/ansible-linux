@@ -1,8 +1,5 @@
----
-- name: Assert supported distribution
-  ansible.builtin.assert:
-    that:
-      - "ansible_pkg_mgr in ('apt', 'dnf', 'pacman')"
-
-- name: 'Install [{{ ansible_pkg_mgr }}]'
-  include_tasks: 'install-{{ ansible_pkg_mgr }}.yml'
+- name: Install neovim
+  become: true
+  ansible.builtin.package:
+    name: neovim
+    state: present

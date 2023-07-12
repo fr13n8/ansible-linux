@@ -8,3 +8,4 @@
       - rg
       - lazygit
     state: present
+  ignore_errors: true

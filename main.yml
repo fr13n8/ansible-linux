@@ -5,4 +5,4 @@
   roles:
     - role: "roles/configure-tmux"
     - role: "roles/configure-neovim"
-    - role: "roles/configure-vscode"
+    - role: gantsign.visual-studio-code

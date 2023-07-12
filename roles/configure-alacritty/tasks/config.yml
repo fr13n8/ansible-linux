@@ -1,6 +1,6 @@
 ---
 - set_fact:
-    alacritty_directory: ~/.config/alacritty
+    configs_directory: ~/.config
 
 - name: Creates ~/.config/alacritty
   file:
@@ -16,5 +16,5 @@
 - name: Copy alacritty configs
   copy:
     src: "{{ role_path }}/files/alacritty"
-    dest: "{{ alacritty_directory }}"
+    dest: "{{ configs_directory }}"
     owner: "{{ ansible_user_id }}"

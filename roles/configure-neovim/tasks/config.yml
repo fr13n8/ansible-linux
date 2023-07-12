@@ -1,6 +1,6 @@
 ---
 - set_fact:
-    nvim_directory: ~/.config/nvim
+    configs_directory: ~/.config
 
 - name: Creates ~/.config/nvim
   file:
@@ -16,5 +16,5 @@
 - name: Copy nvim configs
   copy:
     src: "{{ role_path }}/files/nvim"
-    dest: "{{ nvim_directory }}"
+    dest: "{{ configs_directory }}"
     owner: "{{ ansible_user_id }}"

@@ -8,10 +8,22 @@
     state: present
     name: fontconfig
 
+- name: Creates /tmp/CascadiaCode-fonts
+  file:
+    path: /src/www
+    state: directory
+
+- name: set /tmp/CascadiaCode-fonts directory ownership
+  file:
+    dest: /tmp/CascadiaCode-fonts
+    state: directory
+    owner: "{{ ansible_user_id }}"
+
 - name: download CascadiaCode
   ansible.builtin.unarchive:
     src: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/CascadiaCode.zip
     dest: /tmp/CascadiaCode-fonts
+    mode: 
     remote_src: yes
 
 - name: copy fonts

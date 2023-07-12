@@ -1,0 +1,7 @@
+---
+- name: "Install neovim [apt]"
+  apt:
+    name: neovim
+    state: present
+  become: true
+  become_method: sudo

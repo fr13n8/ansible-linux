@@ -1,0 +1,7 @@
+---
+- name: "Install neovim [dnf]"
+  dnf:
+    name: neovim
+    state: present
+  become: true
+  become_method: sudo

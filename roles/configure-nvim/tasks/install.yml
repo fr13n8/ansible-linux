@@ -1,5 +1,0 @@
----
-- name: Assert supported distribution
-  ansible.builtin.assert:
-    that:
-      - "ansible_pkg_mgr in ('apt', 'dnf', 'pacman')"

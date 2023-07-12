@@ -1,0 +1,7 @@
+---
+- name: "Install tmux [dnf]"
+  dnf:
+    name: tmux
+    state: present
+  become: true
+  become_method: sudo

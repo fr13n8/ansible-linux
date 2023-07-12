@@ -1,0 +1,30 @@
+---
+- name: "Install vscode [Debian|Ubuntu]"
+  apt:
+    name: code
+    state: latest
+  become: true
+  become_method: sudo
+  with_items:
+    - code
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
+- name: "Install vscode [Fedora]"
+  dnf:
+    name: neovim
+    state: latest
+  become: true
+  become_method: sudo
+  with_items:
+    - neovim
+  when: ansible_distribution == 'Fedora'
+
+- name: "Install vscode [Arch]"
+  pacman:
+    name: neovim
+    state: latest
+  become: true
+  become_method: sudo
+  with_items:
+    - neovim
+  when: ansible_distribution == 'Archlinux'

@@ -1,0 +1,19 @@
+---
+- name: Install VSCode repo (dnf)
+  become: true
+  ansible.builtin.yum_repository:
+    name: code
+    description: Visual Studio Code repo
+    file: vscode
+    baseurl: '{{ visual_studio_code_mirror }}/yumrepos/vscode'
+    gpgkey: '{{ visual_studio_code_mirror }}/keys/microsoft.asc'
+    gpgcheck: '{{ visual_studio_code_gpgcheck }}'
+
+- name: "Install tmux [dnf]"
+  dnf:
+    name: tmux
+    state: latest
+  become: true
+  become_method: sudo
+  with_items:
+    - tmux

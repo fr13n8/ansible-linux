@@ -1,0 +1,7 @@
+---
+- name: "Install VSCode [pacman]"
+  pacman:
+    name: code
+    state: latest
+  become: true
+  become_method: sudo

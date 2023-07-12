@@ -1,7 +1,7 @@
 ---
 - name: "Install tmux"
   apt:
-    name: {{ item }}
+    name: tmux
     state: latest
   become: true
   become_method: sudo
@@ -11,7 +11,7 @@
 
 - name: "Install tmux"
   dnf:
-    name: {{ item }}
+    name: tmux
     state: latest
   become: true
   become_method: sudo
@@ -21,7 +21,7 @@
 
 - name: "Install tmux"
   pacman:
-    name: {{ item }}
+    name: tmux
     state: latest
   become: true
   become_method: sudo

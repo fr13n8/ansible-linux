@@ -8,11 +8,11 @@
     - role: "roles/configure-alacritty"
     - role: "roles/configure-rofi"
     - role: "roles/configure-fonts"
-    - role: "roles/configure-nvm"
     - role: gantsign.oh-my-zsh
       users:
         - username: "{{ ansible_user_id }}"
     - role: "roles/configure-zsh"
+    - role: "roles/configure-nvm"
     - role: gantsign.visual-studio-code
       users:
         - username: "{{ ansible_user_id }}"

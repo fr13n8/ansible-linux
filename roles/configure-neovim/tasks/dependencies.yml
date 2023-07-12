@@ -3,8 +3,17 @@
   become: true
   package:
     name:
-      - fd
-      - fd-find
+      - git
       - ripgrep
+      - fd
     state: present
   ignore_errors: true
+
+- name: Install neovim dependencies (fd-find)
+  become: true
+  package:
+    name:
+      - fd-find
+    state: present
+  ignore_errors: true
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu' or ansible_distribution == 'Fedora'

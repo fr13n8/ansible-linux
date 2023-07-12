@@ -4,5 +4,5 @@
     that:
       - "ansible_pkg_mgr in ('apt', 'dnf', 'pacman')"
 
-- name: 'Install ({{ ansible_pkg_mgr }})'
+- name: 'Install [{{ ansible_pkg_mgr }}]'
   include_tasks: 'install-{{ ansible_pkg_mgr }}.yml'

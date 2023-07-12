@@ -1,9 +1,14 @@
 ---
-- name: Install zsh plugins
-  become: true
-  package:
-    name:
-      - zsh-autosuggestions
-      - zsh-syntax-highlighting
-    state: present
-  ignore_errors: true
+- name: Install zsh-autosuggestions plugin
+  git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+    single_branch: yes
+    version: master
+
+- name: Install zsh-autosuggestions plugin
+  git:
+    repo: https://github.com/zsh-users/zsh-syntax-highlighting
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+    single_branch: yes
+    version: master

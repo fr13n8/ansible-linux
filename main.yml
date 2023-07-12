@@ -11,9 +11,6 @@
     - role: gantsign.oh-my-zsh
       users:
         - username: "{{ ansible_user_id }}"
-      plugins:
-        - zsh-autosuggestions
-        - zsh-syntax-highlighting
     - role: "roles/configure-zsh"
     - role: "roles/configure-nvm"
     - role: gantsign.visual-studio-code

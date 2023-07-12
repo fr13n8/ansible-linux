@@ -6,6 +6,5 @@
       - fd
       - fd-find
       - ripgrep
-      - lazygit
     state: present
   ignore_errors: true

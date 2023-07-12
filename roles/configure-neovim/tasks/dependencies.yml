@@ -1,0 +1,10 @@
+---
+- name: Install neovim dependencies
+  become: true
+  package:
+    name:
+      - fd
+      - fd-find
+      - rg
+      - lazygit
+    state: present

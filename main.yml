@@ -16,3 +16,4 @@
         - username: "{{ ansible_user_id }}"
     - role: gantsign.golang
       golang_gopath: '$HOME/go'
+    - role: andrewrothstein.gcc-toolbox

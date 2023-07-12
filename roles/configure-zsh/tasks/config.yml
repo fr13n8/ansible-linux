@@ -1,0 +1,6 @@
+---
+- name: Copy .zshrc configs
+  copy:
+    src: "{{ role_path }}/files/.zshrc"
+    dest: "~/"
+    owner: "{{ ansible_user_id }}"

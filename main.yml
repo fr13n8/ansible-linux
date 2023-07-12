@@ -1,0 +1,6 @@
+---
+- name: "Customizing Linux"
+  hosts: localhost
+  connection: local
+  roles:
+    - role: "roles/configure-tmux"

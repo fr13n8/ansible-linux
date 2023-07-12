@@ -1,0 +1,30 @@
+---
+- name: "Install tmux"
+  apt:
+    name: {{ item }}
+    state: latest
+  become: true
+  become_method: sudo
+  with_items:
+    - tmux
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
+- name: "Install tmux"
+  dnf:
+    name: {{ item }}
+    state: latest
+  become: true
+  become_method: sudo
+  with_items:
+    - tmux
+  when: ansible_distribution == 'Fedora'
+
+- name: "Install tmux"
+  pacman:
+    name: {{ item }}
+    state: latest
+  become: true
+  become_method: sudo
+  with_items:
+    - tmux
+  when: ansible_distribution == 'Archlinux'

@@ -1,0 +1,49 @@
+window:
+  padding:
+    x: 10
+    y: 10
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 0.9
+  # decorations: none
+  dynamic_padding: false
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: CaskaydiaCove Nerd Font
+    style:  Regular
+  bold:
+    family: CaskaydiaCove Nerd Font
+    style:  Bold
+  italic:
+    family: CaskaydiaCove Nerd Font
+    style:  SemiBold Italic
+  bold_italic:
+    family: CaskaydiaCove Nerd Font
+    style:  Bold Italic
+  glyph_offset:
+    x: 0
+    y: 0
+  size: 14
+  draw_bold_text_with_bright_colors: true
+
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+
+selection:
+  save_to_clipboard: false
+
+shell:
+  program: /usr/bin/zsh
+
+key_bindings:
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
+
+window.dynamic_title: true
+env:
+  TERM: xterm-256color

@@ -1,0 +1,19 @@
+---
+- set_fact:
+    alacritty_directory: ~/.config/alacritty
+
+- name: creates ~/.config/alacritty
+  file:
+    path: ~/.config/alacritty
+    state: directory
+
+- name: set ~/.config/alacritty directory ownership
+  file:
+    dest: ~/.config/alacritty
+    state: directory
+    owner: "{{ ansible_user_id }}"
+
+- name: copy alacritty configs
+  copy:
+    src: "{{ role_path }}/files/*"
+    dest: "{{ alacritty_directory }}"

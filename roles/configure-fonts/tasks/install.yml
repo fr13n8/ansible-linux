@@ -8,7 +8,7 @@
     state: present
     name: fontconfig
 
-- name: Creates /tmp/CascadiaCode-fonts
+- name: creates /tmp/CascadiaCode-fonts
   file:
     path: /tmp/CascadiaCode-fonts
     state: directory

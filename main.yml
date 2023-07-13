@@ -23,11 +23,11 @@
     - role: petermosmans.customize-gnome
   vars:
     gnome_dconf:
-      - key: /org/gnome/desktop/background/picture-uri
+      - key: /org/gnome/desktop/background/picture-uri/
         value: file:///home/{{ gnome_user }}/.config/background.jpg
-      - key: /org/gnome/desktop/interface/monospace-font-name
+      - key: /org/gnome/desktop/interface/monospace-font-name/
         value: '"CaskaydiaCove Nerd Font 16"'
-      - key: /org/gnome/desktop/wm/preferences/button-layout
+      - key: /org/gnome/desktop/wm/preferences/button-layout/
         value: "'appmenu:minimize,maximize,close'"
     gnome_extensions:
       - id: 615

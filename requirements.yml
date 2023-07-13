@@ -1,5 +1,10 @@
-- src: gantsign.visual-studio-code
-- src: gantsign.oh-my-zsh
-- src: gantsign.golang
-- src: andrewrothstein.gcc-toolbox
-- src: petermosmans.customize-gnome
+---
+roles:
+  - name: gantsign.visual-studio-code
+  - name: gantsign.oh-my-zsh
+  - name: gantsign.golang
+  - name: andrewrothstein.gcc-toolbox
+  - name: petermosmans.customize-gnome
+
+collections:
+  - name: community.general

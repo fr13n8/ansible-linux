@@ -1,0 +1,11 @@
+---
+- name: Install gnome-tweaks
+  become: true
+  package:
+    name: gnome-tweaks
+    state: present
+
+- name: Install Extension Manager from flathub for current user
+  community.general.flatpak:
+    name: com.mattjakeman.ExtensionManager
+    state: present

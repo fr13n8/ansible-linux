@@ -2,3 +2,4 @@
 - src: gantsign.oh-my-zsh
 - src: gantsign.golang
 - src: andrewrothstein.gcc-toolbox
+- src: petermosmans.customize-gnome

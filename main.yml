@@ -48,15 +48,15 @@
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: battery-bar
-        value: false
+        value: 'false'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: dash-board
-        value: false
+        value: 'false'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: media-player
-        value: false
+        value: 'false'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: date-menu-date-format
@@ -64,27 +64,27 @@
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: date-menu-show-events
-        value: false
+        value: 'false'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: date-menu-show-media
-        value: false
+        value: 'false'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: date-menu-show-system-levels
-        value: false
+        value: 'false'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: date-menu-show-weather
-        value: false
+        value: 'false'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: date-menu-hide-stock-mpris
-        value: true
+        value: 'true'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: date-menu-hide-notifications
-        value: true
+        value: 'true'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: quick-settings-style
@@ -92,41 +92,41 @@
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: quick-settings-show-system-levels
-        value: false
+        value: 'false'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: quick-settings-show-media
-        value: false
+        value: 'false'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: quick-settings-show-wired
-        value: true
+        value: 'true'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: quick-settings-show-network-bt
-        value: true
+        value: 'true'
       - schema: org.gnome.shell.extensions.aylurs-widgets
         schemadir: ~/.local/share/gnome-shell/extensions/widgets@aylur/schemas
         key: quick-settings-show-airplane
-        value: true
+        value: 'true'
       - shcema: org.gnome.shell.extensions.vitals
         schemadir: ~/.local/share/gnome-shell/extensions/Vitals@CoreCoding.com/schemas
         key: show-voltage
-        value: false
+        value: 'false'
       - shcema: org.gnome.shell.extensions.vitals
         schemadir: ~/.local/share/gnome-shell/extensions/Vitals@CoreCoding.com/schemas
         key: show-fan
-        value: false
+        value: 'false'
       - shcema: org.gnome.shell.extensions.vitals
         schemadir: ~/.local/share/gnome-shell/extensions/Vitals@CoreCoding.com/schemas
         key: show-system
-        value: false
+        value: 'false'
       - shcema: org.gnome.shell.extensions.vitals
         schemadir: ~/.local/share/gnome-shell/extensions/Vitals@CoreCoding.com/schemas
         key: show-storage
-        value: false
+        value: 'false'
       - shcema: org.gnome.shell.extensions.vitals
         schemadir: ~/.local/share/gnome-shell/extensions/Vitals@CoreCoding.com/schemas
         key: show-battery
-        value: false
+        value: 'false'
     gtk_version: 4.0

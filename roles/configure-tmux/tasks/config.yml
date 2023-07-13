@@ -1,0 +1,6 @@
+---
+- name: Copy tmux configs
+  copy:
+    src: "{{ role_path }}/files/.tmux.conf"
+    dest: "~/"
+    owner: "{{ ansible_user_id }}"

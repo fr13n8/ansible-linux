@@ -1,0 +1,6 @@
+---
+- name: Install flameshot
+  become: true
+  package:
+    name: flameshot
+    state: present

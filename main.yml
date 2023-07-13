@@ -26,7 +26,13 @@
       - key: /org/gnome/desktop/background/picture-uri
         value: "'file:///home/{{ gnome_user }}/.config/background.jpg'"
       - key: /org/gnome/desktop/interface/monospace-font-name
-        value: '"CaskaydiaCove Nerd Font 16"'
+        value: '"CaskaydiaCove Nerd Font Bold 10"'
+      - key: /org/gnome/desktop/interface/document-font-name
+        value: '"CaskaydiaCove Nerd Font SemiBold 11"'
+      - key: /org/gnome/desktop/interface/font-name
+        value: '"CaskaydiaCove Nerd Font 11"'
+      - key: /org/gnome/desktop/wm/preferences/titlebar-font
+        value: '"CaskaydiaCove Nerd Font Bold 11"'
       - key: /org/gnome/desktop/wm/preferences/button-layout
         value: "'appmenu:minimize,maximize,close'"
     gnome_extensions:

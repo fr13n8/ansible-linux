@@ -1,0 +1,20 @@
+---
+- set_fact:
+    configs_directory: ~/.config
+
+- name: Creates ~/.config/kitty
+  file:
+    path: ~/.config/kitty
+    state: directory
+
+- name: Set ~/.config/kitty directory ownership
+  file:
+    dest: ~/.config/kitty
+    state: directory
+    owner: "{{ ansible_user_id }}"
+
+- name: Copy kitty configs
+  copy:
+    src: "{{ role_path }}/files/kitty"
+    dest: "{{ configs_directory }}"
+    owner: "{{ ansible_user_id }}"

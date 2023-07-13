@@ -1,0 +1,9 @@
+---
+- set_fact:
+    configs_directory: ~/.config
+
+- name: Copy wallpaper
+  copy:
+    src: "{{ role_path }}/files/background.jpg"
+    dest: "{{ configs_directory }}"
+    owner: "{{ ansible_user_id }}"

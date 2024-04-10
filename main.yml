@@ -8,6 +8,7 @@
     - role: "roles/configure-alacritty"
     - role: "roles/configure-rofi"
     - role: "roles/configure-fonts"
+    - role: "roles/configure-starship"
     - role: gantsign.oh-my-zsh
       users:
         - username: "{{ ansible_user_id }}"

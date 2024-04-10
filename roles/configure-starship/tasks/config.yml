@@ -1,0 +1,9 @@
+---
+- set_fact:
+    configs_directory: ~/.config
+
+- name: Copy starship configs
+  copy:
+    src: "{{ role_path }}/files/starship.toml"
+    dest: "{{ configs_directory }}"
+    owner: "{{ ansible_user_id }}"
